@@ -1,0 +1,49 @@
+<template>
+  <div id="app">
+    <header-app></header-app>
+    <content-app></content-app>
+  </div>
+</template>
+
+<script>
+import Header from './components/layout/Header.vue'
+import Content from './components/layout/Content.vue'
+
+export default {
+  name: 'App',
+  components: { 'header-app': Header, 'content-app': Content }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+.nav-tag{padding-right:30px}
+.tag-notif{border-radius:50%;position:absolute;top:5px;margin-left:10px}
+@media (max-width:768px){
+  .tag-notif{margin-left:-2px}
+}
+.navbar{background:#2e363f}
+.navbar-item{background-color:#2e363f;color:#afb8c3!important}
+.navbar-item.is-active,.navbar-item:hover{background-color:#f5f5f5!important;color:#363636!important}
+.navbar .is--brand:hover{background-color:#2e363f!important}
+.navbar-brand-logo{max-height:3rem!important;border-radius:.25em;padding:.25em}
+.navbar-brand-logo,.navbar-dropdown .navbar-item{background-color:#fff}
+.navbar-burger{background-color:#2e363f!important;border:0}
+.navbar-burger span{background-color:#00d1b2}
+.navbar-link figure img{border-radius:50%;max-height:2em}
+.breadcrumb:not(:last-child){margin-bottom:0}
+.aside{background:#2e363f;padding:2em .2em 0 1em}
+.aside a{color:#afb8c3}
+.aside .menu-list li{margin-top:.5em}
+.main{padding:2em 1em 0}
+.menu{text-align: left;height: 88.6vh;}
+.menu-label{color:#00d1b2;margin-left:.5em}
+.block{margin-top:.5em}
+/*# sourceMappingURL=main.css.map*/
+</style>
