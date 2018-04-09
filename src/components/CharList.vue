@@ -1,11 +1,11 @@
 <template>
     <section class="columns is-multiline">
-        <div class="column" v-bind:key="c.id" v-for="c in chars">
+        <div class="column is-2" v-bind:key="c.id" v-for="c in chars">
             <router-link class="card" v-bind:to="'/char/' + c.id" >
                 <div class="card-title-header">
                     {{c.name}}      
                 </div>
-                <figure class="image is-128x128">
+                <figure class="image">
                     <img :src="c.thumbnail.path+'.'+c.thumbnail.extension"/>
                 </figure>  
 
@@ -32,3 +32,17 @@
         }
     }
 </script>
+
+<style scoped>
+figure.image {
+    max-height: 150px;
+}
+
+figure > img {
+    max-height: 150px;
+}
+
+.column {
+    border: 1px solid silver
+}
+</style>
