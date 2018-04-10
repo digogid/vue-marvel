@@ -1,3 +1,9 @@
+<!-- 
+  App.vue é o principal component de uma aplicação vue
+  será o root, nele deve-se importar os components que 
+  serão renderizados em tela
+
+-->
 <template>
   <div id="app">
     <header-app></header-app>

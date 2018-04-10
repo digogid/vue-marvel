@@ -4,10 +4,13 @@
       <aside class="column is-2 aside">
         <nav class="menu">
           <p class="menu-label">
-            PERSONAGENS
+            Lists
           </p>
           <ul class="menu-list">
-            <li><router-link exact to="/"><span class="icon is-small"><i class="fa fa-tachometer"></i></span> Lista </router-link></li>
+            <li><router-link exact to="/"><span class="icon is-small"><i class="fa fa-tachometer"></i></span> Characters </router-link></li>
+          </ul>
+          <ul class="menu-list">
+            <li><router-link exact to="/events"><span class="icon is-small"><i class="fa fa-tachometer"></i></span> Events </router-link></li>
           </ul>
         </nav>
       </aside>
