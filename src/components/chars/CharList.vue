@@ -1,11 +1,11 @@
 <template>
     <section>
         <search-bar v-bind:type="'characters'"></search-bar>
-        <section class="columns is-multiline">
+        <section class="columns is-multiline is-mobile">
             <div class="column is-12" v-if="!loaded">
                 <a class="button is-info is-loading">Loading</a>
             </div>
-            <div class="column is-2" v-bind:key="c.id" v-for="c in chars">
+            <div class="column is-three-quarters-desktop is-half-mobile is-half-tablet" v-bind:key="c.id" v-for="c in chars">
                 <router-link class="card" v-bind:to="'/char/' + c.id" >
                     <div class="card-title-header">
                         {{c.name}}      
@@ -61,6 +61,8 @@ figure.image {
 
 figure > img {
     max-height: 150px;
+    max-width: 200px;
+    margin: auto;
 }
 
 .column {

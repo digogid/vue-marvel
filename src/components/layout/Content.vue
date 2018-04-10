@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="columns">
-      <aside class="column is-2 aside">
+      <aside class="column is-2 is-hidden-mobile aside">
         <nav class="menu">
           <p class="menu-label">
             Lists
